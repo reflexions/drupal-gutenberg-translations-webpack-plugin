@@ -4,6 +4,19 @@ A Webpack plugin for generating Drupal translations for Gutenberg modules.
 
 ## Setup
 ```
+yarn add --dev @reflexions/drupal-gutenberg-translations-webpack-plugin
+```
+
+```
+const path = require('path');
+const DrupalGutenbergTranslationsWebpackPlugin = require('@reflexions/drupal-gutenberg-translations-webpack-plugin');
+...
+plugins: [
+	new DrupalGutenbergTranslationsPlugin({
+		path: path.resolve(__dirname, 'js'), // path to the directory containing translateable files
+		bin: path.resolve('/bin', 'drupal-gutenberg-tranlations'), // OPTIONAL path to the translation bin
+	}),
+],
 ```
 
 If your code optimizer is mangling variable names, you may need to prevent that in order for the translation tool to find translations.

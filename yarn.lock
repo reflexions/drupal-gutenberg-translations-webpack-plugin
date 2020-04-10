@@ -48,14 +48,16 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
-"drupal-gutenberg-translations@git+https://github.com/reflexions/drupal-gutenberg-translations.git":
-  version "1.0.2"
-  resolved "git+https://github.com/reflexions/drupal-gutenberg-translations.git#80790202faeb821650d42dc3ca93d0070aad4ba5"
+drupal-gutenberg-translations@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/drupal-gutenberg-translations/-/drupal-gutenberg-translations-1.1.0.tgz#b4610a678ba25cc2827cc8c363c0836a30a24956"
+  integrity sha512-rXXh3knJMifz0HI7eofxmShFY/OEAOlvl8oszu2A4yR8SHDEXijgExaY33/nmqrvAg8z67wAJXZ4i4txzP8AWg==
   dependencies:
     chalk "^2.4.2"
     fs-extra "^8.1.0"
     glob "^7.1.6"
-    minimist "^1.2.0"
+    minimist "^1.2.5"
+    typescript "^3.8.3"
 
 escape-string-regexp@^1.0.5:
   version "1.0.5"
@@ -125,7 +127,7 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@^1.2.0:
+minimist@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
@@ -148,6 +150,11 @@ supports-color@^5.3.0:
   integrity sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
   dependencies:
     has-flag "^3.0.0"
+
+typescript@^3.8.3:
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.3.tgz#409eb8544ea0335711205869ec458ab109ee1061"
+  integrity sha512-MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==
 
 universalify@^0.1.0:
   version "0.1.2"

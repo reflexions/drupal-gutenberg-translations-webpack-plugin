@@ -2,9 +2,10 @@
   "name": "@reflexions/drupal-gutenberg-translations-webpack-plugin",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Nathan Harper <nathan.sam.harper@gmail.com>",
+  "author": "Nathan Harper <nathan@reflexions.co>",
   "license": "MIT",
+  "homepage": "https://github.com/reflexions/drupal-gutenberg-translations-webpack-plugin",
   "dependencies": {
-    "drupal-gutenberg-translations": "git+https://github.com/reflexions/drupal-gutenberg-translations.git"
+    "drupal-gutenberg-translations": "^1.1.0"
   }
 }
