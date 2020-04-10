@@ -2,9 +2,6 @@ const { resolve } = require('path');
 const { spawn } = require('child_process');
 
 class DrupalGutenbergTranslationsPlugin {
-	bin = null;
-	path = null;
-
 	constructor({ bin, path }) {
 		this.path = path;
 
