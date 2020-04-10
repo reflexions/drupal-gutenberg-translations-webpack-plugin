@@ -4,7 +4,6 @@
   "main": "index.js",
   "author": "Nathan Harper <nathan@reflexions.co>",
   "license": "MIT",
-  "homepage": "https://github.com/reflexions/drupal-gutenberg-translations-webpack-plugin",
   "description": "A Webpack plugin for generating Drupal translations for Gutenberg modules.",
   "dependencies": {
     "drupal-gutenberg-translations": "^1.1.0"
