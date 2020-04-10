@@ -5,7 +5,24 @@
   "author": "Nathan Harper <nathan@reflexions.co>",
   "license": "MIT",
   "homepage": "https://github.com/reflexions/drupal-gutenberg-translations-webpack-plugin",
+  "description": "A Webpack plugin for generating Drupal translations for Gutenberg modules.",
   "dependencies": {
     "drupal-gutenberg-translations": "^1.1.0"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reflexions/drupal-gutenberg-translations-webpack-plugin.git"
+  },
+  "keywords": [
+    "Drupal",
+    "Gutenberg",
+    "Translations"
+  ],
+  "bugs": {
+    "url": "https://github.com/reflexions/drupal-gutenberg-translations-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/reflexions/drupal-gutenberg-translations-webpack-plugin#readme"
 }
