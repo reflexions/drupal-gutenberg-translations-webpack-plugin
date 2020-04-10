@@ -40,3 +40,5 @@ class DrupalGutenbergTranslationsPlugin {
 		});
 	}
 }
+
+module.exports = DrupalGutenbergTranslationsPlugin;
