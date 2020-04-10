@@ -18,23 +18,32 @@ class DrupalGutenbergTranslationsPlugin {
 	}
 
 	apply(compiler) {
-		compiler.hooks.afterEmit.tapAsync('DrupalGutenbergTranslationsPlugin', () => {
-			console.log('Running drupal-gutenberg-translations...');
+		compiler.hooks.afterEmit.tapAsync('DrupalGutenbergTranslationsPlugin',
+			(compilation, callback) => {
+				console.log('Running drupal-gutenberg-translations...');
 
-			const process = spawn(this.bin, [ this.path ]);
+				const process = spawn(this.bin, [ this.path ]);
 
-			process.stdout.on('data', (data) => {
-				console.log('drupal-gutenberg-translations:', data);
-			});
+				process.stdout.on('data', (data) => {
+					console.log('drupal-gutenberg-translations:', data.toString());
+				});
 
-			process.stderr.on('data', (data) => {
-				console.error('drupal-gutenberg-translations:', data);
-			});
+				process.stderr.on('data', (data) => {
+					console.error('drupal-gutenberg-translations:', data.toString());
+				});
 
-			process.on('close', (code) => {
-				console.log('drupal-gutenberg-translations:', `Finished with code '${code}'`);
-			});
-		});
+				process.on('close', (code) => {
+					if (code === 0) {
+						console.log('drupal-gutenberg-translations:', `Finished drupal-gutenberg-translations`);
+					}
+					else {
+						console.error(`drupal-gutenberg-translations failed with code "${code}"`);
+					}
+				});
+
+				callback();
+			}
+		);
 	}
 }
 
